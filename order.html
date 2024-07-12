@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
             transition: background-color 0.3s, color 0.3s;
             text-align: center;
         }
+
         .container {
             width: 80%;
             margin: 0 auto;
@@ -21,94 +23,119 @@
             grid-template-columns: repeat(2, 1fr);
             gap: 20px;
         }
+
         .product-card {
             background: #fff;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 30px;
             padding: 20px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             transition: background 0.3s, border-color 0.3s;
         }
+
         .product-card h3 {
             margin-top: 0;
             color: #333;
             transition: color 0.3s;
         }
+
         .product-card ul {
             list-style: none;
             padding: 0;
         }
+
         .product-card ul li {
             padding: 5px 0;
             border-bottom: 1px solid #eee;
             transition: border-color 0.3s;
         }
+
         .product-card ul li:last-child {
             border-bottom: none;
         }
+
         .price {
             font-size: 1.5em;
             color: #e74c3c;
             margin-top: 10px;
             transition: color 0.3s;
         }
+
         .purchase-btn {
             display: inline-block;
             background: #3498db;
             color: #fff;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
             text-decoration: none;
             margin-top: 10px;
             transition: background 0.3s;
         }
+
         .purchase-btn:hover {
             background: #2980b9;
         }
+
         .dark-mode {
             background-color: #333;
             color: #f4f4f4;
         }
+
         .dark-mode .product-card {
             background: #444;
             border-color: #555;
         }
+
         .dark-mode .product-card h3 {
             color: #f4f4f4;
         }
+
         .dark-mode .product-card ul li {
             border-color: #555;
         }
+
         .dark-mode .price {
             color: #ff7675;
         }
+
         .dark-mode .purchase-btn {
             background: #2980b9;
         }
+
         .dark-mode .purchase-btn:hover {
             background: #3498db;
         }
+
         .toggle-btn {
             display: inline-block;
             background: #3498db;
             color: #fff;
             padding: 10px 20px;
-            border-radius: 5px;
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
             text-decoration: none;
             margin: 20px auto;
             cursor: pointer;
             transition: background 0.3s, transform 0.3s;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
+
         .toggle-btn:hover {
             background: #2980b9;
             transform: scale(1.05);
         }
+
         .toggle-btn:active {
             transform: scale(0.95);
         }
     </style>
 </head>
+
 <body>
     <div class="toggle-btn" onclick="toggleMode()">Toggle Dark/Light Mode</div>
     <div class="container">
@@ -121,7 +148,8 @@
                 <li>1 TB Traffic</li>
             </ul>
             <div class="price">2.99€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/a7d5692f-adf9-49ef-8c3f-d64049282e0e" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/a7d5692f-adf9-49ef-8c3f-d64049282e0e"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Starter</h3>
@@ -132,7 +160,8 @@
                 <li>1 TB Traffic</li>
             </ul>
             <div class="price">4.5€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/42b614dd-4093-4848-a3cb-66e0125d58b0" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/42b614dd-4093-4848-a3cb-66e0125d58b0"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Newcomer</h3>
@@ -143,7 +172,8 @@
                 <li>1 TB Traffic</li>
             </ul>
             <div class="price">5.5€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/615de057-040c-453b-8f90-01f95f157fe8" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/615de057-040c-453b-8f90-01f95f157fe8"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Boost</h3>
@@ -154,7 +184,8 @@
                 <li>1 TB Traffic</li>
             </ul>
             <div class="price">7.5€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/d9d3576e-0eeb-45da-ba18-048776480eff" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/d9d3576e-0eeb-45da-ba18-048776480eff"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Super</h3>
@@ -165,7 +196,8 @@
                 <li>2 TB Traffic</li>
             </ul>
             <div class="price">11.99€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/b6b5c632-e222-4400-b6ce-2d055fcf32c7" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/b6b5c632-e222-4400-b6ce-2d055fcf32c7"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Expert</h3>
@@ -176,7 +208,8 @@
                 <li>2 TB Traffic</li>
             </ul>
             <div class="price">15.99€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/643b60f7-3b60-413f-b5c8-38cef960485c" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/643b60f7-3b60-413f-b5c8-38cef960485c"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Big</h3>
@@ -187,7 +220,8 @@
                 <li>2 TB Traffic</li>
             </ul>
             <div class="price">22.50€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/ec046edf-e2ad-4d64-a76f-cbcc8fad15b9" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/ec046edf-e2ad-4d64-a76f-cbcc8fad15b9"
+                class="purchase-btn">Order</a>
         </div>
         <div class="product-card">
             <h3>Mega</h3>
@@ -198,7 +232,8 @@
                 <li>2 TB Traffic</li>
             </ul>
             <div class="price">34.99€ / mes</div>
-            <a href="https://panel.itzthelorenz.me/order/config/2/86dbfb55-02b9-41cc-b6b5-b9b87c3096ef" class="purchase-btn">Order</a>
+            <a href="https://panel.itzthelorenz.me/order/config/2/86dbfb55-02b9-41cc-b6b5-b9b87c3096ef"
+                class="purchase-btn">Order</a>
         </div>
     </div>
     <script>
