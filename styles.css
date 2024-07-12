@@ -94,7 +94,7 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
-    background-color: #444; /* Fondo claro por defecto */
+    background-color: #444;
     border-radius: 34px;
     cursor: pointer;
     transition: background-color 0.3s;
@@ -107,7 +107,7 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #ddd; /* Círculo oscuro por defecto */
+    background-color: #ddd;
     transition: .4s;
     border-radius: 50%;
 }
@@ -117,11 +117,11 @@ body {
 }
 
 .toggle-mode:checked + .toggle-slider {
-    background-color: #444; /* Fondo oscuro al activar */
+    background-color: #444; 
 }
 
 .toggle-mode:checked + .toggle-slider:before {
-    background-color: #fff; /* Círculo blanco al activar */
+    background-color: #fff;
 }
 
 body.light-mode {
@@ -168,11 +168,10 @@ body.light-mode .toggle-slider:before {
 }
 
 body.light-mode .toggle-mode:checked + .toggle-slider {
-    background-color: #ddd; /* Fondo claro al activar */
-}
+    background-color: #ddd;
 
 body.light-mode .toggle-mode:checked + .toggle-slider:before {
-    background-color: #333; /* Círculo oscuro al activar */
+    background-color: #333;
 }
 
 body.light-mode .toggle-label {
