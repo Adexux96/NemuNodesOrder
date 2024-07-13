@@ -82,7 +82,7 @@ body {
 .toggle-label {
     margin-right: 10px;
     font-size: 1em;
-    color: #f4f4f4;
+    transition: color 0.3s;
 }
 
 .toggle-mode {
@@ -107,7 +107,7 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: #ddd;
+    background-color: #fff;
     transition: .4s;
     border-radius: 50%;
 }
@@ -117,16 +117,24 @@ body {
 }
 
 .toggle-mode:checked + .toggle-slider {
-    background-color: #444; 
+    background-color: #ddd;
 }
 
 .toggle-mode:checked + .toggle-slider:before {
-    background-color: #fff;
+    background-color: #333;
 }
 
 body.light-mode {
     background-color: #fff;
     color: #333;
+}
+
+body.light-mode .toggle-label {
+    color: #333;
+}
+
+body.dark-mode .toggle-label {
+    color: #f4f4f4;
 }
 
 body.light-mode .container {
@@ -160,20 +168,17 @@ body.light-mode .purchase-btn:hover {
 }
 
 body.light-mode .toggle-slider {
-    background-color: #333;
+    background-color: #ddd;
 }
 
 body.light-mode .toggle-slider:before {
-    background-color: #ddd;
-}
-
-body.light-mode .toggle-mode:checked + .toggle-slider {
-    background-color: #ddd;
-
-body.light-mode .toggle-mode:checked + .toggle-slider:before {
     background-color: #333;
 }
 
-body.light-mode .toggle-label {
-    color: #333;
+body.light-mode .toggle-mode:checked + .toggle-slider {
+    background-color: #eee;
+}
+
+body.light-mode .toggle-mode:checked + .toggle-slider:before {
+    background-color: #444;
 }
